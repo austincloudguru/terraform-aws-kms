@@ -3,7 +3,19 @@
 ![Latest Version](https://img.shields.io/github/v/tag/austincloudguru/terraform-aws-kms?sort=semver&label=Latest%20Version)
 [![License](https://img.shields.io/github/license/austincloudguru/terraform-aws-kms)](https://github.com/austincloudguru/terraform-aws-kms/blob/master/LICENSE)
 
-Terraform module which creates
+Terraform module that creates a KMS Key on AWS to use with any AWS Resource.  It will also create the KMS alias
+
+## Usage
+```hcl
+module "kms" {
+  source                  = "AustinCloudGuru/alb/aws//module/alb"
+  # You should pin the module to a specific version
+  # version                 = "x.x.x"
+  key_alias               = "aws_config_bucket"
+  description             = "AWS_"
+  deletion_window_in_days = 7
+}
+```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
