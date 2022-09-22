@@ -8,11 +8,11 @@ Terraform module that creates a KMS Key on AWS to use with any AWS Resource.  It
 ## Usage
 ```hcl
 module "kms" {
-  source                  = "AustinCloudGuru/alb/aws//module/alb"
+  source                  = "AustinCloudGuru/alb/aws/kms"
   # You should pin the module to a specific version
   # version                 = "x.x.x"
   key_alias               = "aws_config_bucket"
-  description             = "AWS_"
+  description             = "KMS Key for the AWS Config Bucket"
   deletion_window_in_days = 7
 }
 ```
