@@ -4,10 +4,10 @@ variable "region" {
   default     = "us-west-2"
 }
 
-variable "tld" {
-  description = "Top Level Domain"
+variable "key_suffix" {
+  description = "Suffix for the key to allow for multiple runs"
   type        = string
-  default     = "austincloud.net"
+  default     = "123456"
 }
 
 variable "tags" {
