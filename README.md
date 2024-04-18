@@ -1,5 +1,5 @@
 # Terraform AWS KMS Module
-[![Terratest](https://github.com/austincloudguru/terraform-aws-kms/workflows/Terratest/badge.svg?event=push)](https://github.com/austincloudguru/terraform-aws-kms/actions?query=workflow%3ATerratest) 
+[![Terratest](https://github.com/austincloudguru/terraform-aws-kms/workflows/Terratest/badge.svg)](https://github.com/austincloudguru/terraform-aws-kms/actions?query=workflow%3ATerratest) 
 ![Latest Version](https://img.shields.io/github/v/tag/austincloudguru/terraform-aws-kms?sort=semver&label=Latest%20Version)
 [![License](https://img.shields.io/github/license/austincloudguru/terraform-aws-kms)](https://github.com/austincloudguru/terraform-aws-kms/blob/master/LICENSE)
 
@@ -22,14 +22,14 @@ module "kms" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.2.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.8.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 4.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
 
 ## Modules
 
